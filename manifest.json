@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Prime Video Ad Control",
+  "version": "1.0.0",
+  "description": "Mutes Prime Video ads and either jumps to the end of them, speeds them up to 16x, or both. Toggle each from the toolbar.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Prime Video Ad Control",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.primevideo.com/*",
+        "https://www.amazon.com/*/dp/*",
+        "https://www.amazon.com/gp/video/*",
+        "https://www.amazon.in/*/dp/*",
+        "https://www.amazon.in/gp/video/*",
+        "https://www.amazon.co.uk/gp/video/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
