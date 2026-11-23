@@ -1,12 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Prime Video Ad Control",
+  "name": "Ad Control for Prime Video",
   "version": "1.0.0",
-  "description": "Mutes Prime Video ads and either jumps to the end of them, speeds them up to 16x, or both. Toggle each from the toolbar.",
-  "permissions": ["storage"],
+  "description": "Mutes Prime Video ads and fast-forwards through them. Toggle each feature from the toolbar. Not affiliated with Amazon.",
+  "permissions": [
+    "storage"
+  ],
   "action": {
-    "default_title": "Prime Video Ad Control",
-    "default_popup": "popup.html"
+    "default_title": "Ad Control for Prime Video",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
   },
   "content_scripts": [
     {
@@ -18,9 +25,17 @@
         "https://www.amazon.in/gp/video/*",
         "https://www.amazon.co.uk/gp/video/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle",
       "all_frames": true
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }

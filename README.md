@@ -1,4 +1,4 @@
-# Prime Video Ad Control (v1.0)
+# Ad Control for Prime Video (v1.0)
 
 One extension with two independent switches in the toolbar popup:
 
