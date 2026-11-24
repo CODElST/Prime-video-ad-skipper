@@ -11,7 +11,9 @@ Your volume and playback speed are restored afterwards. With both switches
 off, the extension does nothing. Both are on by default, and the settings are
 remembered.
 
-## Install (Chrome / Edge / Brave)
+## Install via Web store
+Chrome webstore link: https://chromewebstore.google.com/detail/ad-control-for-prime-vide/mgbippjiaabbocjnndbmejmflgiondco
+## Install directly via Source code (Chrome / Edge / Brave)
 1. Unzip this folder.
 2. Disable or remove the older "Prime Video Ad Skipper" and
    "Prime Video Ad Jump" extensions, so they don't fight over the video.
